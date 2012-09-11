@@ -1,4 +1,6 @@
 Dinning::Application.routes.draw do
+  resources :foots
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
