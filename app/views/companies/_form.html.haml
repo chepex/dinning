@@ -11,6 +11,10 @@
     = f.label :active, :class => 'control-label'
     .controls
       = f.check_box :active, :class => 'check_box'
+  .control-group
+    = f.label :ciut, :class => 'control-label'
+    .controls
+      = f.text_field :ciut, :class => 'text_field'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), companies_path, :class => 'btn'

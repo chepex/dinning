@@ -1,5 +1,5 @@
 class Company < ActiveRecord::Base
-	has_many :departments
+	has_many: departments
 
 	validates_uniqueness_of :name, :message => "Esta empresa ya existe en base"
 	validates_presence_of :name, :message => "necesito un nombre"

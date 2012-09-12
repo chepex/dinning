@@ -14,6 +14,10 @@
   %strong= model_class.human_attribute_name(:active) + ':'
   %br
   = @company.active
+%p
+  %strong= model_class.human_attribute_name(:ciut) + ':'
+  %br
+  = @company.ciut
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), companies_path, :class => 'btn'
